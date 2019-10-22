@@ -1,0 +1,6 @@
+framework module AkaMap {
+  umbrella header "AkaMap.h"
+
+  export *
+  module * { export * }
+}
