@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-20.32
+20.33
 
 
 INSTALLATION
@@ -38,6 +38,10 @@ https://www.akamai.com/product/licenses .
 
 RELEASE NOTES
 --------------------
+
+20.33 - 2019-11-06
+
+- Replace UIWebView with WKWebView for getting default User-Agent.
 
 20.32 - 2019-09-26
 
