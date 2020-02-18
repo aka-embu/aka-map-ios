@@ -34,9 +34,12 @@ function strip_unnecessary_archs() {
 
     for arch in $ARCHS
     do
-	echo "** Extracting ${arch} from ${basename}"
-        lipo -extract "${arch}" "${image}" -o "${image}-${arch}"
-	extracted+=("${image}-${arch}")
+		echo "** Extracting ${arch} from ${basename}"
+		lipo -extract "${arch}" "${image}" -o "${image}-${arch}" || {
+			echo "** Skipping framework since lipo extract failed (already single architecture?): ${image}"
+			return
+		}
+		extracted+=("${image}-${arch}")
     done
 
     echo "** Merging architectures ${ARCHS}"

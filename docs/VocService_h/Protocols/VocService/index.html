@@ -284,9 +284,13 @@ function disclosure_triangle(elt) {
 <p>VocService encapsulates the functionality provided by Voc SDK.<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intf/VocService;name=end --></p>
 <h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font></h5>
 <!-- begin discussion --><!-- headerDoc=discussion;uid=//apple_ref/occ/intf/VocService;name=start --><p>The VocService instance is created through AkaMap.
-To create the service, a delegate implementing VocServiceDelegate protocol and delegate queue are required. In most cases the delegate queue will be the main app queue, however there is no restriction what type of queue to use. If the queue is not serial then users of MAP SDK must ensure MAP item objects are accessed serially since they are not thread safe. One such way to achieve that would be to add a lock object of some kind on MAP item userInfo and use it to serialize access.
+To create the service, a delegate implementing VocServiceDelegate protocol and delegate queue are required. In most cases the
+delegate queue will be the main app queue, however there is no restriction what type of queue to use. If the queue is not serial then
+users of MAP SDK must ensure MAP item objects are accessed serially since they are not thread safe. One such way to achieve
+that would be to add a lock object of some kind on MAP item userInfo and use it to serialize access.
 </p>
-<p>VocService state is available through VocService.state property. Initially VocService is in VOCServiceStateNotRegistered state until it is successfully registered with MAP server. To register, call [VocService registerService].
+<p>VocService state is available through VocService.state property. Initially VocService is in VOCServiceStateNotRegistered state until it
+is successfully registered with MAP server. To register, call [VocService registerService].
 </p>
 <!-- headerDoc=discussion;uid=//apple_ref/occ/intf/VocService;name=end --><!-- end discussion -->
 <hr class="afterClassOrHeaderInfo">
@@ -329,7 +333,10 @@ To create the service, a delegate implementing VocServiceDelegate protocol and d
 <a name="//apple_ref/doc/methodparam/VocService/application:performFetchWithCompletionHandler:/completionHandler"></a>
 <code>completionHandler</code>
 </dt>
-<dd><p>Gets called if voc service performs operation in the background otherwise completionHandler will not be called by voc service - the app will have to call it when it is done. If the app wants to perform operations in background it will have to give voc service a different completionHandler not the one it received. The app should call the original completionHandler only after both it is done and the compeltionHandler it gave to voc service is invoked.</p></dd>
+<dd><p>Gets called if voc service performs operation in the background otherwise completionHandler will
+not be called by voc service - the app will have to call it when it is done. If the app wants to perform operations in background it will
+have to give voc service a different completionHandler not the one it received. The app should call the original completionHandler
+only after both it is done and the compeltionHandler it gave to voc service is invoked.</p></dd>
 </dl>
 </div>
 <h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
@@ -345,7 +352,7 @@ To create the service, a delegate implementing VocServiceDelegate protocol and d
 <p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/VocService/didReceiveRemoteNotification:fetchCompletionHandler:;name=start --><!-- begin abstract --></p>
 <p>Must be invoked when remote notification is received to let Voc SDK process it.<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/VocService/didReceiveRemoteNotification:fetchCompletionHandler:;name=end --></p>
 <div class="declaration_indent">
-<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/intfm/VocService/didReceiveRemoteNotification:fetchCompletionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/VocService/didReceiveRemoteNotification:fetchCompletionHandler:" logicalPath="//apple_ref/occ/instm/VocService/didReceiveRemoteNotification //apple_ref/occ/clm/VocService/didReceiveRemoteNotification //apple_ref/occ/intfcm/VocService/didReceiveRemoteNotification //apple_ref/occ/intfm/VocService/didReceiveRemoteNotification" target="_top"><span class="function">didReceiveRemoteNotification</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/nullable //apple_ref/occ/tdef/nullable //apple_ref/occ/tag/nullable //apple_ref/occ/struct/nullable //apple_ref/occ/intf/nullable //apple_ref/doc/anysymbol/nullable" machineGenerated="true" --><span class="type">nullable</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" machineGenerated="true" --><span class="type">NSDictionary</span><!-- /a --> <span class="type">*</span>)<span class="param">userInfo</span> 
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/intfm/VocService/didReceiveRemoteNotification:fetchCompletionHandler:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/BOOL //apple_ref/occ/tdef/BOOL //apple_ref/occ/tag/BOOL //apple_ref/occ/struct/BOOL //apple_ref/occ/intf/BOOL //apple_ref/doc/anysymbol/BOOL" machineGenerated="true" --><span class="type">BOOL</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/VocService/didReceiveRemoteNotification:fetchCompletionHandler:" logicalPath="//apple_ref/occ/instm/VocService/didReceiveRemoteNotification //apple_ref/occ/clm/VocService/didReceiveRemoteNotification //apple_ref/occ/intfcm/VocService/didReceiveRemoteNotification //apple_ref/occ/intfm/VocService/didReceiveRemoteNotification" target="_top"><span class="function">didReceiveRemoteNotification</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/nullable //apple_ref/occ/tdef/nullable //apple_ref/occ/tag/nullable //apple_ref/occ/struct/nullable //apple_ref/occ/intf/nullable //apple_ref/doc/anysymbol/nullable" machineGenerated="true" --><span class="type">nullable</span><!-- /a --> <a machinegenerated="true" href="../../../AkaCachedFile_h/index.html#//apple_ref/c/func/NSDictionary" logicalPath="//apple_ref/occ/cl/NSDictionary //apple_ref/occ/tdef/NSDictionary //apple_ref/occ/tag/NSDictionary //apple_ref/occ/struct/NSDictionary //apple_ref/occ/intf/NSDictionary //apple_ref/doc/anysymbol/NSDictionary" target="_top"><span class="type">NSDictionary</span></a> <span class="type">*</span>)<span class="param">userInfo</span> 
         <!-- a logicalPath="//apple_ref/occ/instm/VocService/fetchCompletionHandler //apple_ref/occ/clm/VocService/fetchCompletionHandler //apple_ref/occ/intfcm/VocService/fetchCompletionHandler //apple_ref/occ/intfm/VocService/fetchCompletionHandler //apple_ref/occ/func/fetchCompletionHandler //apple_ref/occ/ftmplt/VocService/fetchCompletionHandler //apple_ref/occ/defn/fetchCompletionHandler //apple_ref/occ/macro/fetchCompletionHandler //apple_ref/doc/anysymbol/fetchCompletionHandler" machineGenerated="true" --><span class="function">fetchCompletionHandler</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/nonnull //apple_ref/occ/tdef/nonnull //apple_ref/occ/tag/nonnull //apple_ref/occ/struct/nonnull //apple_ref/occ/intf/nonnull //apple_ref/doc/anysymbol/nonnull" machineGenerated="true" --><span class="type">nonnull</span><!-- /a --> void (^)(<!-- a logicalPath="//apple_ref/occ/cl/UIBackgroundFetchResult //apple_ref/occ/tdef/UIBackgroundFetchResult //apple_ref/occ/tag/UIBackgroundFetchResult //apple_ref/occ/struct/UIBackgroundFetchResult //apple_ref/occ/intf/UIBackgroundFetchResult //apple_ref/doc/anysymbol/UIBackgroundFetchResult" machineGenerated="true" --><span class="type">UIBackgroundFetchResult</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/cl/result //apple_ref/occ/tdef/result //apple_ref/occ/tag/result //apple_ref/occ/struct/result //apple_ref/occ/intf/result //apple_ref/doc/anysymbol/result" machineGenerated="true" --><span class="type">result</span><!-- /a -->))<!-- a logicalPath="//apple_ref/occ/econst/completionHandler //apple_ref/occ/data/VocService/completionHandler //apple_ref/occ/data/completionHandler //apple_ref/occ/clconst/VocService/completionHandler " machineGenerated="true" --><span class="var">completionHandler</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/intfm/VocService/didReceiveRemoteNotification:fetchCompletionHandler:;name=end --></pre>
 </div>
 <h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
@@ -366,7 +373,8 @@ method returns NO the app will have to call the completionHandler received from 
 </dt>
 <dd><p>This is obtained from UIApplicationDelegate::didReceiveRemoteNotification:fetchCompletionHandler:
 and passed into this method. It is a dictionary that contains information related to the remote
-notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data.</p></dd>
+notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a
+notification identifier, and custom data.</p></dd>
 </dl>
 </div>
 <h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5>
@@ -401,7 +409,8 @@ notification, potentially including a badge number for the app icon, an alert so
 <h2 class="h2tight">Properties</h2>
 <dl>
 <dt><tt><a href="index.html#//apple_ref/occ/instp/VocService/cacheAvailable" target="_top">cacheAvailable</a></tt></dt>
-<dd><p>The remaining storage available for downloaded files (bytes). This is the smaller values of the unused cache and the space available on device. </p></dd>
+<dd><p>The remaining storage available for downloaded files (bytes). This is the smaller values of the unused cache and the
+space available on device. </p></dd>
 <dt><tt><a href="index.html#//apple_ref/occ/instp/VocService/cacheSize" target="_top">cacheSize</a></tt></dt>
 <dd><p>Size of the cache for downloaded files (bytes). </p></dd>
 <dt><tt><a href="index.html#//apple_ref/occ/instp/VocService/cacheUsed" target="_top">cacheUsed</a></tt></dt>
@@ -425,7 +434,8 @@ notification, potentially including a badge number for the app icon, an alert so
 <h3><a name="cacheAvailable">cacheAvailable</a></h3>
 <hr class="afterName">
 <p><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/VocService/cacheAvailable;name=start --><!-- begin abstract --></p>
-<p>The remaining storage available for downloaded files (bytes). This is the smaller values of the unused cache and the space available on device. <!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/VocService/cacheAvailable;name=end --></p>
+<p>The remaining storage available for downloaded files (bytes). This is the smaller values of the unused cache and the
+space available on device. <!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/instp/VocService/cacheAvailable;name=end --></p>
 <div class="declaration_indent">
 <pre><!-- headerDoc=declaration;uid=//apple_ref/occ/instp/VocService/cacheAvailable;name=start -->@property (<span class="param">readonly</span>,
     <span class="param">assign</span>,
@@ -532,7 +542,7 @@ notification, potentially including a badge number for the app icon, an alert so
 <p class="gapBeforeFooter">&nbsp;</p>
 <hr class="afterFooter">
 <div class="hd_copyright_and_timestamp">
-<p class="hd_timestamp">Last Updated: Wednesday, November 06, 2019
+<p class="hd_timestamp">Last Updated: Friday, February 14, 2020
 </p>
 </div>
 </td>

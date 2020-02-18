@@ -11,6 +11,7 @@
 
 #import <AkaMap/VocSdkBase.h>
 #import <AkaMap/VocService.h>
+#import <AkaMap/AkaCachedFile.h>
 
 @protocol AkaMapProtocol;
 @class AkaMap;
@@ -62,7 +63,8 @@
  @param delegate Your implementation of VocServiceDelegate.
  @param delegateQueue The queue on which to call your delegate.
  */
-- (void)setDelegate:(nullable id<VocServiceDelegate>)delegate withOperationQueue:(nullable NSOperationQueue*)delegateQueue;
+- (void)setDelegate:(nullable id<VocServiceDelegate>)delegate
+ withOperationQueue:(nullable NSOperationQueue*)delegateQueue;
 
 /*!
  @brief Return whether MAP SDK is initialized and URL interception is enabled.
@@ -134,6 +136,21 @@
  */
 - (void)printCache;
 
+//--------------------------------------
+// WKWebView support
+
+/*!
+ @brief Return file paths to completed items in the cache.
+ */
+- (nonnull NSSet<AkaCachedFile*> *)cachedFiles;
+
+/*!
+ @brief Return file for URL if present in cache, otherwise nil.
+ */
+- (nullable AkaCachedFile*)cachedFileForURL:(nonnull NSString *)urlString;
+
+//--------------------------------------
+
 /*!
    @brief Debug Only - print manifest contents.
    @deprecated Renamed to match Android.
@@ -172,7 +189,7 @@
 - (NSInteger)filesLoadedFromCache;
 - (NSInteger)bytesLoadedFromCache;
 - (NSInteger)filesNotHandled;
-- (nonnull NSMutableArray *)filesRequested;
+- (nonnull NSArray <NSString*>*)filesRequested;
 - (nullable NSString *)statsConnectionType;
 - (void)clearStats;
 

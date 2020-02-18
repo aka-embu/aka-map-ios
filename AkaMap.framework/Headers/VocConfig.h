@@ -178,7 +178,7 @@
 
  Ex. [akaService.config setWhitelist:@[@"www.xyz.com"]];
  */
-- (void)setWhitelist:(nullable NSArray<NSString*> *) whitelist;
+- (void)setWhitelist:(nullable NSArray<NSString*> *)whitelist;
 
 /*!
  @brief This method will blacklist a list of host names
@@ -191,7 +191,7 @@
 
  Ex. [akaService.config setBlacklist:@[@"www.xyz.com"]];
  */
-- (void)setBlacklist:(nullable NSArray<NSString*> *) blacklist;
+- (void)setBlacklist:(nullable NSArray<NSString*> *)blacklist;
 
 @end
 

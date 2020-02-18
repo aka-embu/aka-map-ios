@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-20.33
+21.11
 
 
 INSTALLATION
@@ -39,19 +39,37 @@ https://www.akamai.com/product/licenses .
 RELEASE NOTES
 --------------------
 
+21.11 - 2020-01-16
+
+- Support downloading segments in priority order. 
+  Priorities can be set at the MAP portal ingestion page.
+
+- Open a fallback connection when SR4C can't connect to a hostname.
+  Prevent SR4C on that hostname until the server configuration changes.
+
+- API key and segment names from Info.plist have their start and end whitespace trimmed.
+
+
+
+20.41 - 2019-12-19
+
+- Provide direct cache access via API, with optional callbacks for cache changes.
+- Prevent If-Modified-Since checks on cached files from being cached by the OS, 
+  ensuring requests for updated content are fulfilled.
+
+
+
 20.33 - 2019-11-06
 
-- Replace UIWebView with WKWebView for getting default User-Agent.
+- Replace internal use of UIWebView with WKWebView for getting default User-Agent.
+
+
 
 20.32 - 2019-09-26
 
 - Split framework into AkaCommon and AkaMap to combine
   support for MAP and mPulse SDKs.
-
 - Reduce overall SDK size.
-
-KNOWN ISSUES
-    No known issues.
 
 
 
