@@ -470,7 +470,7 @@ callbacks.
 <p><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration:;name=start --><!-- begin abstract --></p>
 <p>Changes an NSURLSessionConfiguration to pass requests through MAP SDK's URL handler.<!-- end abstract --><!-- headerDoc=abstract;uid=//apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration:;name=end --></p>
 <div class="declaration_indent">
-<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration:" logicalPath="//apple_ref/occ/instm/AkaMapProtocol/setupSessionConfiguration //apple_ref/occ/clm/AkaMapProtocol/setupSessionConfiguration //apple_ref/occ/intfcm/AkaMapProtocol/setupSessionConfiguration //apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration" target="_top"><span class="function">setupSessionConfiguration</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/nonnull //apple_ref/occ/tdef/nonnull //apple_ref/occ/tag/nonnull //apple_ref/occ/struct/nonnull //apple_ref/occ/intf/nonnull //apple_ref/doc/anysymbol/nonnull" machineGenerated="true" --><span class="type">nonnull</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/cl/NSURLSessionConfiguration //apple_ref/occ/tdef/NSURLSessionConfiguration //apple_ref/occ/tag/NSURLSessionConfiguration //apple_ref/occ/struct/NSURLSessionConfiguration //apple_ref/occ/intf/NSURLSessionConfiguration //apple_ref/doc/anysymbol/NSURLSessionConfiguration" machineGenerated="true" --><span class="type">NSURLSessionConfiguration</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/occ/econst/sessionConfig //apple_ref/occ/data/AkaMapProtocol/sessionConfig //apple_ref/occ/data/sessionConfig //apple_ref/occ/clconst/AkaMapProtocol/sessionConfig " machineGenerated="true" --><span class="var">sessionConfig</span><!-- /a -->; <!-- headerDoc=declaration;uid=//apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration:;name=end --></pre>
+<pre><!-- headerDoc=declaration;uid=//apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration:;name=start -->- (<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/struct/void //apple_ref/occ/intf/void //apple_ref/doc/anysymbol/void" machineGenerated="true" --><span class="type">void</span><!-- /a -->)<a machinegenerated="true" href="index.html#//apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration:" logicalPath="//apple_ref/occ/instm/AkaMapProtocol/setupSessionConfiguration //apple_ref/occ/clm/AkaMapProtocol/setupSessionConfiguration //apple_ref/occ/intfcm/AkaMapProtocol/setupSessionConfiguration //apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration" target="_top"><span class="function">setupSessionConfiguration</span></a>:(<!-- a logicalPath="//apple_ref/occ/cl/nonnull //apple_ref/occ/tdef/nonnull //apple_ref/occ/tag/nonnull //apple_ref/occ/struct/nonnull //apple_ref/occ/intf/nonnull //apple_ref/doc/anysymbol/nonnull" machineGenerated="true" --><span class="type">nonnull</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/cl/NSURLSessionConfiguration //apple_ref/occ/tdef/NSURLSessionConfiguration //apple_ref/occ/tag/NSURLSessionConfiguration //apple_ref/occ/struct/NSURLSessionConfiguration //apple_ref/occ/intf/NSURLSessionConfiguration //apple_ref/doc/anysymbol/NSURLSessionConfiguration" machineGenerated="true" --><span class="type">NSURLSessionConfiguration</span><!-- /a --> <span class="type">*</span>)<span class="param">sessionConfig</span> DEPRECATED_MSG_ATTRIBUTE("<span class="string">Replace</span> <span class="string">with</span> [[<span class="string">AkaCommon</span> <span class="string">shared</span>] <span class="string">interceptSessionsWithConfiguration</span>:<span class="string">sessionConfig</span>]"); <!-- headerDoc=declaration;uid=//apple_ref/occ/intfm/AkaMapProtocol/setupSessionConfiguration:;name=end --></pre>
 </div>
 <h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
 <div class="param_indent">
@@ -483,6 +483,9 @@ callbacks.
 <dd><p>Instance of NSURLSessionConfiguration.</p></dd>
 </dl>
 </div>
+<p><b>Deprecated</b></p>
+
+<p>Switch to the updated [[AkaCommon shared] interceptSessionsWithConfiguration:sessionConfig];</p>
 <hr class="betweenAPIEntries">
 <!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/AkaMapProtocol/startEvent:;   name=AkaMapProtocol::startEvent: -->
 <a name="//apple_ref/occ/intfm/AkaMapProtocol/startEvent:"></a>
@@ -584,7 +587,7 @@ Contents contained in at least one subscribed segment is retained.
 <p class="gapBeforeFooter">&nbsp;</p>
 <hr class="afterFooter">
 <div class="hd_copyright_and_timestamp">
-<p class="hd_timestamp">Last Updated: Friday, February 21, 2020
+<p class="hd_timestamp">Last Updated: Thursday, March 05, 2020
 </p>
 </div>
 </td>

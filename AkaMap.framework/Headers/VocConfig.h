@@ -22,9 +22,6 @@
 /*! @brief The license provided through configuration or registration API. */
 @property (readonly,nullable,atomic,strong)	NSString				*license;
 
-/*! @brief Unique id for voc service assigned during registration. */
-@property (readonly,nullable,atomic,strong)	NSString				*vocId;
-
 /*!
    @brief Serverhost is the one that manages the content on the device.
 

@@ -128,9 +128,8 @@ typedef NS_ENUM(NSInteger, VOCServiceState) {
    @constant VOCItemQueued Item has been added to downloading queue, it is currently not downloading. It will start downloading.
    @constant VOCItemDownloading Item is being downloaded.
    @constant VOCItemIdle Item is currently not downloading. Item has been previously queued for downloading but did not finish. Download will resume automatically at some point. Reason for stopping download can be found in VocItem::downloadError .
-   @constant VOCItemPaused Item is currently not downloading. It has been explicitly paused with VocSerice pauseItems:.
    @constant VOCItemCached Item download was completed successfully. Cached content is ready for use.
- @constant VOCItemFailed If PCD SDK is unsuccessful to download any main content file after a number of attempts, the item will be marked as failed and the downloaded content will be removed. No more download attempts will be made on the item, unless an explicit download for this item is triggered again. VocItem::downloadError , can be used to verify the reason for download failure.
+   @constant VOCItemFailed If MAP SDK is unsuccessful in downloading any file after a number of attempts, the item will be marked as failed and the downloaded content will be removed. No more download attempts will be made on the item, unless an explicit download for this item is triggered again. VocItem::downloadError can be used to verify the reason for download failure.
    @constant VOCItemDeleted Item has been deleted and cannot be used any more. There are no cached files.
    @see VocService
  */
@@ -139,7 +138,6 @@ typedef NS_ENUM(NSInteger, VOCItemState) {
 	VOCItemQueued						= 5,
 	VOCItemDownloading					= 1,
 	VOCItemIdle							= 6,
-	VOCItemPaused						= 7,
 	VOCItemCached						= 2,
 	VOCItemFailed						= 4,
 	VOCItemDeleted						= 3,
@@ -147,7 +145,6 @@ typedef NS_ENUM(NSInteger, VOCItemState) {
 	//deprecated mixed case aliases
 	VocItemQueued = VOCItemQueued,
 	VocItemIdle = VOCItemIdle,
-	VocItemPaused = VOCItemPaused,
 	VocItemFailed = VOCItemFailed,
 };
 
@@ -173,33 +170,6 @@ typedef NS_ENUM(NSInteger, VOCFileState) {
 
 
 #pragma mark -- Types --
-/*!
-   @brief VocObj type enumeration.
-
-   @constant VOCObjTypeItem Content item type.
-   @constant VOCObjTypeItemCategory Category type.
-   @constant VOCObjTypeItemSource Source/Provider type.
- */
-typedef NS_ENUM(NSInteger, VOCObjType) {
-	VOCObjTypeItem				= 0,
-	VOCObjTypeItemCategory		= 1,
-	VOCObjTypeItemSource		= 2,
-	VOCObjTypeCount
-};
-
-/*!
-   @brief Content item type enumeration.
-
-   @constant VOCItemTypeVideo Video content.
-   @constant VOCItemTypeGeneral A type that can accomodate any content.
- */
-typedef NS_ENUM(NSInteger, VOCItemTypeEnum) {
-
-	VOCItemTypeVideo			= 0,
-    VOCItemTypeGeneral          = 8,
-	VOCItemTypeCount
-};
-
 
 /*!
    @brief File type enumeration.
@@ -252,6 +222,7 @@ typedef NS_ENUM(NSInteger, VOCConnectionType) {
 
    @constant VOCNetworkSelectionNone SDK should not use any network.
    @constant VOCNetworkSelectionWifiOnly SDK downloads content over Wifi network.
+   @constant VOCNetworkSelectionCellularOnly SDK downloads content over Cellular network.
    @constant VOCNetworkSelectionWifiAndCellular SDK downloads content over Wifi network and if Wifi network is not available, SDK downloads content over Cellular network.
  */
 typedef NS_ENUM(NSInteger, VOCNetworkSelection) {
@@ -259,18 +230,7 @@ typedef NS_ENUM(NSInteger, VOCNetworkSelection) {
 	VOCNetworkSelectionNone			   = 0,
 	VOCNetworkSelectionWifiOnly        = 100,
 	VOCNetworkSelectionWifiAndCellular = 101,
-};
-
-/*!
- @brief Type of download for a VocItem (shows how the download was initiated).
-
- @constant VocDownloadTypeAuto		Download was initiated by SDK(Auto).
- @constant VocDownloadTypeManual	Download was initiated by user Application(Manually).
-
- */
-typedef NS_ENUM(NSInteger, VocDownloadType) {
-	VocDownloadTypeAuto				= 0,
-	VocDownloadTypeManual			= 1,
+	VOCNetworkSelectionCellularOnly	   = 102,
 };
 
 /*!

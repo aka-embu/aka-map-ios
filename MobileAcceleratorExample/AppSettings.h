@@ -13,7 +13,6 @@
 @property (nonatomic,strong) NSString *serverLicenseKey;
 @property (nonatomic,strong) NSArray *userSegments;
 @property (nonatomic,strong) NSString *webURL;
-@property (nonatomic,strong) NSString *vocID;
 
 + (instancetype) sharedInstance;
 

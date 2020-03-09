@@ -177,8 +177,10 @@
  @brief Changes an NSURLSessionConfiguration to pass requests through MAP SDK's URL handler.
 
  @param sessionConfig Instance of NSURLSessionConfiguration.
+
+ @deprecated Switch to the updated [[AkaCommon shared] interceptSessionsWithConfiguration:sessionConfig];
  */
-- (void)setupSessionConfiguration:(nonnull NSURLSessionConfiguration *)sessionConfig;
+- (void)setupSessionConfiguration:(nonnull NSURLSessionConfiguration *)sessionConfig DEPRECATED_MSG_ATTRIBUTE("Replace with [[AkaCommon shared] interceptSessionsWithConfiguration:sessionConfig]");
 
 //TODO: THESE APIS WILL BE REMOVED SOON. PLEASE DO NOT USE.
 // Wrap AkaURLRequester class methods for sample app

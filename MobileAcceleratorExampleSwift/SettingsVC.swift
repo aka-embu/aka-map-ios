@@ -15,7 +15,6 @@ class SettingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
 	enum settingsRow: Int {
 		case SETTINGS_SERVER_HOST = 0
-		case SETTINGS_VOCID
 		case SETTINGS_SDK_API_KEY
 		case SETTINGS_SDK_SEGMENTS
 		case SETTINGS_WEB_URL
@@ -47,10 +46,6 @@ class SettingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 				label.text = "SDK Server (overrides lookup)"
 				detailLabel.text = akaConfig?.serverHostOverride?.host ?? "<use lookup>"
 
-			case .SETTINGS_VOCID:
-				label.text = "VOCID"
-				detailLabel.text = sharedSettings.vocID
-
 			case .SETTINGS_SDK_API_KEY:
 				label.text = "API Key"
 				detailLabel.text = sharedSettings.serverLicenseKey
@@ -76,13 +71,6 @@ class SettingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
 	// MARK: UITableViewDelegate
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		switch indexPath.row {
-		case settingsRow.SETTINGS_VOCID.rawValue:
-			//read only
-			return
-		default:
-			break
-		}
 		acceptModalInputForField(field: settingsRow(rawValue:indexPath.row)!)
 	}
 

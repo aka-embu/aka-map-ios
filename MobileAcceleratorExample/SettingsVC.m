@@ -22,7 +22,6 @@
 
 typedef enum {
 	SETTINGS_SERVER_HOST = 0,
-    SETTINGS_VOCID,
     SETTINGS_SDK_API_KEY,
     SETTINGS_SDK_SEGMENTS,
     SETTINGS_WEB_URL,
@@ -63,10 +62,6 @@ typedef enum {
 			cell.detailTextLabel.text = serverOverride ? : @"<use lookup>";
 			break;
 		}
-        case SETTINGS_VOCID:
-            cell.textLabel.text = @"VOCID";
-            cell.detailTextLabel.text = self.sharedSettings.vocID;
-            break;
         case SETTINGS_SDK_API_KEY:
             cell.textLabel.text = @"API Key";
             cell.detailTextLabel.text = self.sharedSettings.serverLicenseKey;
@@ -95,11 +90,6 @@ typedef enum {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch (indexPath.row) {
-        case SETTINGS_VOCID:
-            // read only
-            return;
-    }
     [self acceptModalInputForField:(settingsRow)indexPath.row];
 }
 

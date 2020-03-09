@@ -86,15 +86,4 @@ static NSString * const kSettingsWebURL         = @"serverWebURL";
 }
 
 
-#pragma mark Read-only properties -- these are not persisted
-
-
-- (NSString *)vocID
-{
-    return appDelegate().akaService.config.vocId;
-}
-
-
-
-
 @end

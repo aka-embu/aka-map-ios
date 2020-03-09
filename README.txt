@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.11
+21.12
 
 
 INSTALLATION
@@ -38,6 +38,14 @@ https://www.akamai.com/product/licenses .
 
 RELEASE NOTES
 --------------------
+
+21.12 - 2020-02-27
+
+- Support segment-level controls for network type (e.g., download this manifest's
+  contents over wifi only).
+- Support segment-level controls for alternate download sources.
+
+
 
 21.11 - 2020-01-16
 

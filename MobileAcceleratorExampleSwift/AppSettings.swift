@@ -64,17 +64,4 @@ final class AppSettings : NSObject {
 			userDefaults.synchronize()
 		}
 	}
-
-// MARK: Read-only properties -- these are not persisted
-	var vocID: String {
-		get {
-			let appDelegate = UIApplication.shared.delegate as! AppDelegate
-			if (appDelegate.akaService?.state == VOCServiceState.notRegistered) {
-				return ""
-			} else {
-				return (appDelegate.akaService?.config.vocId!)!
-			}
-		}
-	}
-
 }

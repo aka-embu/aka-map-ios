@@ -14,19 +14,19 @@
 		</data>
 		<key>Headers/AkaMapClass.h</key>
 		<data>
-		0ykXIisaj8sqsr1bhf1Atp8Jdxc=
+		spBPy0fvN90pOnvvez3zvT1ONrU=
 		</data>
 		<key>Headers/VocConfig.h</key>
 		<data>
-		AMbziobNO7Aez/BJJd9DgMJC6kk=
+		2gpaqXNYQOn4YdSMsm8UHiU+pBc=
 		</data>
 		<key>Headers/VocSdkBase.h</key>
 		<data>
-		pCcpQIWTcY8/SH79jzea7I+oYhE=
+		DLL57wH7aCH3MfVllC2J880cI04=
 		</data>
 		<key>Headers/VocSdkVersion.h</key>
 		<data>
-		2BuxM+6tCgtVnjunpwjhKjUPuoQ=
+		/pwUJ4l398odVSPo56uGn2cSvjM=
 		</data>
 		<key>Headers/VocService.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9PwGx9ezhf3kfm+jr6VGLWNzhBA=
+		UTGZ3ab2tkID9iLMkI0nnNNJ4HI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>res/vocsdk.momd/VersionInfo.plist</key>
 		<data>
-		64F+JjvDawCMZ3cXI2XwSz0HOxs=
+		JQsZlkcUbTBi9hGCThk9hlI9HlM=
 		</data>
 		<key>res/vocsdk.momd/vocsdk_17.1.2.134.mom</key>
 		<data>
@@ -196,9 +196,13 @@
 		<data>
 		GFtRlmEJcJIf0cwb+PSCNVPLwS4=
 		</data>
-		<key>res/vocsdk.momd/vocsdk_21.1.1.0.omo</key>
+		<key>res/vocsdk.momd/vocsdk_21.1.2.0.mom</key>
 		<data>
-		+7jaaf2WFk+OT49UwdV77V8UjTo=
+		k1crEgHZmomE22UrgSrqQGEclWw=
+		</data>
+		<key>res/vocsdk.momd/vocsdk_21.1.2.0.omo</key>
+		<data>
+		EXUPkeeDpzslvZdB0W0WJ25Wxgo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -229,44 +233,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0ykXIisaj8sqsr1bhf1Atp8Jdxc=
+			spBPy0fvN90pOnvvez3zvT1ONrU=
 			</data>
 			<key>hash2</key>
 			<data>
-			wUVj/2HVvAK8+JpLQ3IHD9Dfb8uPGcCy5y+TA72IWLE=
+			aK+SvlytVq3Wgv2qdiP9hlOmKBKUVkSAlm+aWGZui0k=
 			</data>
 		</dict>
 		<key>Headers/VocConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AMbziobNO7Aez/BJJd9DgMJC6kk=
+			2gpaqXNYQOn4YdSMsm8UHiU+pBc=
 			</data>
 			<key>hash2</key>
 			<data>
-			P0l4a4ifTotSFKORZmrArDmWOQWYBmOve5y6NuQJ2xY=
+			6BMfoXsSmoxrRj327NieoNoXxNFNaOyqbkrhEvAZze0=
 			</data>
 		</dict>
 		<key>Headers/VocSdkBase.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pCcpQIWTcY8/SH79jzea7I+oYhE=
+			DLL57wH7aCH3MfVllC2J880cI04=
 			</data>
 			<key>hash2</key>
 			<data>
-			7j2aAO7w/0l9yIyVDLyiIvusXZZsMM06Fv5hhFOsl+0=
+			U0fNLZu0a0qF2Njbi4/epCK05NNwC5jnJ24l0R/qJ7Q=
 			</data>
 		</dict>
 		<key>Headers/VocSdkVersion.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2BuxM+6tCgtVnjunpwjhKjUPuoQ=
+			/pwUJ4l398odVSPo56uGn2cSvjM=
 			</data>
 			<key>hash2</key>
 			<data>
-			yWIGTMeE377yiomXaXG4+S26Dmgxr3bgQYJDDTwJdVI=
+			ymHI7Li9mdKebdI8LPchV4Me5bjDArECG3teOSuMTNY=
 			</data>
 		</dict>
 		<key>Headers/VocService.h</key>
@@ -328,11 +332,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			64F+JjvDawCMZ3cXI2XwSz0HOxs=
+			JQsZlkcUbTBi9hGCThk9hlI9HlM=
 			</data>
 			<key>hash2</key>
 			<data>
-			/4qdd6uecUJN5rsxqmTZOLKZrKXE41h0zx/pllkW8uA=
+			AhTY3ZKVOMg/59MprgoM7SdSI/gAq4/m3PvVWWsKChw=
 			</data>
 		</dict>
 		<key>res/vocsdk.momd/vocsdk_17.1.2.134.mom</key>
@@ -720,15 +724,26 @@
 			hs2rDSW1qDTutFjXUUiQ+W9xxAqb6HGyP0cW6mor7Sk=
 			</data>
 		</dict>
-		<key>res/vocsdk.momd/vocsdk_21.1.1.0.omo</key>
+		<key>res/vocsdk.momd/vocsdk_21.1.2.0.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+7jaaf2WFk+OT49UwdV77V8UjTo=
+			k1crEgHZmomE22UrgSrqQGEclWw=
 			</data>
 			<key>hash2</key>
 			<data>
-			eRHX3qBzuIVrXyt3rcANkRqPLIJkESQcD1Mm+CBKI2g=
+			puFmd08q2Rce8nNQKLEtzVFS9cTTorTDYQemaI0/pi0=
+			</data>
+		</dict>
+		<key>res/vocsdk.momd/vocsdk_21.1.2.0.omo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EXUPkeeDpzslvZdB0W0WJ25Wxgo=
+			</data>
+			<key>hash2</key>
+			<data>
+			K4pvXv2e93tD+RgaQoUTAukncI82qGPcKdQrIos/AhE=
 			</data>
 		</dict>
 	</dict>
