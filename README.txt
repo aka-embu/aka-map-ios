@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.12
+21.13
 
 
 INSTALLATION
@@ -38,6 +38,13 @@ https://www.akamai.com/product/licenses .
 
 RELEASE NOTES
 --------------------
+
+21.13 - 2020-04-06
+
+- Internal code size reduction.
+- Added Swift samples in Integration Guide document
+
+
 
 21.12 - 2020-02-27
 
