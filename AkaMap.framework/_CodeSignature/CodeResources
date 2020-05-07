@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/VocSdkVersion.h</key>
 		<data>
-		2jVYYB7EEOsbAFkA0Ewv0uVRuFs=
+		HcKs38ginynRQCjTV7cfmbjaahM=
 		</data>
 		<key>Headers/VocService.h</key>
 		<data>
@@ -34,23 +34,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/3jXnlFLBTx/IC4E2WaVnmTi7HA=
+		F9KIa976y9ZE/4xPED4hw3LaLDI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		tHxB351IV5qtqnRPvCTeE6itPPE=
-		</data>
-		<key>res/20190517-appbattery.cer</key>
-		<data>
-		abf8D6z0WyeY1rN5AUx/Ga2lE84=
-		</data>
-		<key>res/certificate.der</key>
-		<data>
-		abf8D6z0WyeY1rN5AUx/Ga2lE84=
-		</data>
-		<key>res/map.cert</key>
-		<data>
-		sn777LfRYU7hdxIhAmcpR71GmTM=
 		</data>
 		<key>res/vocsdk.momd/VersionInfo.plist</key>
 		<data>
@@ -266,11 +254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2jVYYB7EEOsbAFkA0Ewv0uVRuFs=
+			HcKs38ginynRQCjTV7cfmbjaahM=
 			</data>
 			<key>hash2</key>
 			<data>
-			X9CtbCNx/21YscEek1WR9ow2Qjdk/bHF8+cBDrUZksM=
+			fOYwgNI2BnxGgfu6sV2nfsJrQlADzz1floo2eCYDFLk=
 			</data>
 		</dict>
 		<key>Headers/VocService.h</key>
@@ -293,39 +281,6 @@
 			<key>hash2</key>
 			<data>
 			cfvmvrpIRBURHMmaEW5Z4tAI5UxoR2VEqn5bnaLRYrk=
-			</data>
-		</dict>
-		<key>res/20190517-appbattery.cer</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			abf8D6z0WyeY1rN5AUx/Ga2lE84=
-			</data>
-			<key>hash2</key>
-			<data>
-			IQVFUfI7l/U4ZRXTzRqEbCgZBSz0FBXAK7ObZ8WkKIg=
-			</data>
-		</dict>
-		<key>res/certificate.der</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			abf8D6z0WyeY1rN5AUx/Ga2lE84=
-			</data>
-			<key>hash2</key>
-			<data>
-			IQVFUfI7l/U4ZRXTzRqEbCgZBSz0FBXAK7ObZ8WkKIg=
-			</data>
-		</dict>
-		<key>res/map.cert</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sn777LfRYU7hdxIhAmcpR71GmTM=
-			</data>
-			<key>hash2</key>
-			<data>
-			9GI8GF2G4bCUAVVEvZcnLosDPkz0Hsf4uCQrGUXCdEs=
 			</data>
 		</dict>
 		<key>res/vocsdk.momd/VersionInfo.plist</key>

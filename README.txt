@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.13
+21.21
 
 
 INSTALLATION
@@ -38,6 +38,12 @@ https://www.akamai.com/product/licenses .
 
 RELEASE NOTES
 --------------------
+
+21.21 - 2020-05-07
+
+- Version parity with mPulse SDK.
+
+
 
 21.13 - 2020-04-06
 
