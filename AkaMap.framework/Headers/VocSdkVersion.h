@@ -5,6 +5,6 @@
 //
 
 #define VOCSDK_MAJOR			21
-#define VOCSDK_MINOR			21
+#define VOCSDK_MINOR			30
 #define VOCSDK_BUILD			0
-#define VOCSDK_VERSION_STRING	"21.21.0"
+#define VOCSDK_VERSION_STRING	"21.30.0"

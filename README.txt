@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.21
+21.30
 
 
 INSTALLATION
@@ -38,6 +38,13 @@ https://www.akamai.com/product/licenses .
 
 RELEASE NOTES
 --------------------
+
+21.30 - 2020-06-04
+
+- Fix for memory leak in URL request interception mechanism.
+- Support for configure with an SDK specific plist file (instead of Application’s Info.plist)
+
+
 
 21.21 - 2020-05-07
 
