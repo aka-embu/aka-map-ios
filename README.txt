@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.30
+21.40
 
 
 INSTALLATION
@@ -38,6 +38,12 @@ https://www.akamai.com/product/licenses .
 
 RELEASE NOTES
 --------------------
+
+21.40 - 2020-07-02
+
+- Fix for problem with processing some request errors
+
+
 
 21.30 - 2020-06-04
 

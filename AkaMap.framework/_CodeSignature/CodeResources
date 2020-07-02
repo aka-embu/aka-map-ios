@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/VocSdkVersion.h</key>
 		<data>
-		R4lXZbwEbHHCzYn6k9kH86Ppbdg=
+		apv6gARtv/G2Tsz9mqOj4aH2Gcc=
 		</data>
 		<key>Headers/VocService.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nLPDJDqdcILFb20x15m0aV7YbPc=
+		vx69/ULe3Ma0HxYLKEuAm4FMyHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>res/vocsdk.momd/VersionInfo.plist</key>
 		<data>
-		JQsZlkcUbTBi9hGCThk9hlI9HlM=
+		0RTw40ykOwNltlin4f6YzULvfZs=
 		</data>
 		<key>res/vocsdk.momd/vocsdk_17.1.2.134.mom</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>res/vocsdk.momd/vocsdk_21.1.2.0.omo</key>
 		<data>
-		EXUPkeeDpzslvZdB0W0WJ25Wxgo=
+		GggBFhqIK1D2OM101vMB41rx5TM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -254,11 +254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R4lXZbwEbHHCzYn6k9kH86Ppbdg=
+			apv6gARtv/G2Tsz9mqOj4aH2Gcc=
 			</data>
 			<key>hash2</key>
 			<data>
-			oO9T+ZBwLaWFSef7+4Co0+BrCu+70Kumbzq0klux3fE=
+			V3jvOjCGfzHyBi5dnnuSvqjX+UB/n5DgMsolSvGL3Go=
 			</data>
 		</dict>
 		<key>Headers/VocService.h</key>
@@ -287,11 +287,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JQsZlkcUbTBi9hGCThk9hlI9HlM=
+			0RTw40ykOwNltlin4f6YzULvfZs=
 			</data>
 			<key>hash2</key>
 			<data>
-			AhTY3ZKVOMg/59MprgoM7SdSI/gAq4/m3PvVWWsKChw=
+			FJukRRxW1nG5OlHpzLaOdxF0gtLuumm5nPjnKqDf01g=
 			</data>
 		</dict>
 		<key>res/vocsdk.momd/vocsdk_17.1.2.134.mom</key>
@@ -694,11 +694,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EXUPkeeDpzslvZdB0W0WJ25Wxgo=
+			GggBFhqIK1D2OM101vMB41rx5TM=
 			</data>
 			<key>hash2</key>
 			<data>
-			K4pvXv2e93tD+RgaQoUTAukncI82qGPcKdQrIos/AhE=
+			8fu50dBKYk3JVqa5frpIv5XMX7U+5JxR+17P4UzO750=
 			</data>
 		</dict>
 	</dict>
