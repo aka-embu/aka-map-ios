@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.40
+21.60
 
 
 INSTALLATION
@@ -38,6 +38,12 @@ https://www.akamai.com/product/licenses .
 
 RELEASE NOTES
 --------------------
+
+21.60 - 2020-09-24
+
+- Fixes issue with sending wrong SDK version in analytics.
+
+
 
 21.40 - 2020-07-02
 
