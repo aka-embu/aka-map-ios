@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/VocSdkVersion.h</key>
 		<data>
-		9mCDNKvpiMsaKoS1wGU0BLFeKuw=
+		d5GglXOq1KJzeoVwXp3kpNsB5y4=
 		</data>
 		<key>Headers/VocService.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TiVzWBnEPG9W52yF+AZ2wyERbzc=
+		nQc7eMHGNEIraH38WIBlykVQg3Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -254,11 +254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9mCDNKvpiMsaKoS1wGU0BLFeKuw=
+			d5GglXOq1KJzeoVwXp3kpNsB5y4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Igpy8XOhGS/ATGaiwSWHHIY7XSsJI2tzA2cKkXP8hK8=
+			n2X3cPUfbTPzBuxhXfwZtvFLUG0vqO1Bkfz3T40ReVs=
 			</data>
 		</dict>
 		<key>Headers/VocService.h</key>

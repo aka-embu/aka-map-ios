@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.60
+21.70
 
 
 INSTALLATION
@@ -39,9 +39,15 @@ https://www.akamai.com/product/licenses .
 RELEASE NOTES
 --------------------
 
+21.70 - 2020-10-21
+
+- Fixes an issue with printCurrentConfiguration producing a misleading log message when initialization is in progress.
+
+
+
 21.60 - 2020-09-24
 
-- Fixes issue with sending wrong SDK version in analytics.
+- Fixes an issue with sending wrong SDK version in analytics.
 
 
 
