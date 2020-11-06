@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.70
+21.71
 
 
 INSTALLATION
@@ -38,6 +38,12 @@ https://www.akamai.com/product/licenses .
 
 RELEASE NOTES
 --------------------
+
+21.71 - 2020-11-05
+
+- Fixes an issue with displaying the "Local Network" permission dialog on iOS 14. The SDK will no longer need that permission.
+
+
 
 21.70 - 2020-10-21
 
