@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.71
+21.80
 
 
 INSTALLATION
@@ -33,21 +33,32 @@ LICENSE
 --------------------
 Use of this SDK is governed by the Mobile Application Performance (MAP), Predictive
 Content Delivery (PCD) and WatchNow SDK License Agreement found at
-https://www.akamai.com/product/licenses .
+https://www.akamai.com/product/licenses.
 
 
 RELEASE NOTES
 --------------------
 
+21.80 - 2020-12-09
+
+- Fixes an issue where a POST request could receive a response previously stored in 
+  the cache for GET request to the same URL. 
+- Fixes an issue where the SDK would suggest OS Cache that it should store responses 
+  for POST requests.
+
+
+
 21.71 - 2020-11-05
 
-- Fixes an issue with displaying the "Local Network" permission dialog on iOS 14. The SDK will no longer need that permission.
+- Fixes an issue with displaying the "Local Network" permission dialog on iOS 14. 
+  The SDK will no longer need that permission.
 
 
 
 21.70 - 2020-10-21
 
-- Fixes an issue with printCurrentConfiguration producing a misleading log message when initialization is in progress.
+- Fixes an issue with printCurrentConfiguration producing a misleading log message 
+  when initialization is in progress.
 
 
 
@@ -137,10 +148,10 @@ KNOWN ISSUES
 20.12 - 2019-02-21
 
 - Changing user segments causes an immediate sync with the server to get the 
-  latest contents.  Previous behavior was to wait until next sync (e.g., app 
+  latest contents. Previous behavior was to wait until next sync (e.g., app 
   coming to foreground if several minutes had passed since last sync).
 
-- Ignore OPTIONS requests by default.  Ignore other HTTP/S request methods
+- Ignore OPTIONS requests by default. Ignore other HTTP/S request methods
   as follows, or set to nil to have MAP SDK intercept all requests:
 
   akaService.config.ignoredHTTPMethods = @[@"post",@"options"];
@@ -150,7 +161,7 @@ KNOWN ISSUES
   unregister followed by registering the new license.
 
   Similarly, if the (deprecated) register API is used, the previous license
-  will deregister followed by registering the new license.  Plist is the
+  will deregister followed by registering the new license. Plist is the
   preferred method.
 
   Note: This is intended to correct license errors, not to switch features
@@ -319,7 +330,7 @@ KNOWN ISSUES
 
 - New config property VocService.config.foregroundContentCheckDelay - seconds after coming
 	to foreground to delay a check for new content. This delay helps reduce interference
-	with time-critical tasks such as UI setup.  Default value is 3.0 seconds.	
+	with time-critical tasks such as UI setup. Default value is 3.0 seconds.	
 	
 - Bug fixes.
 
@@ -376,8 +387,8 @@ DEPRECATIONS
 
 - registerWithLicense (instead use configuration dictionary in Info.plist)
 - VocConfig::networkSelection is marked readonly in this release and
-        the value it holds reflect the applied network selection.
-        Use VocConfig::networkSelectionOverride for writing the value.
+  the value it holds reflect the applied network selection.
+  Use VocConfig::networkSelectionOverride for writing the value.
 
 
 18.22 - 2017-06-13
@@ -385,7 +396,7 @@ DEPRECATIONS
 
 - Improvements in network quality detection.
 - SDK will no longer cause location prompt and will monitor location only if app
-	requests and is granted authorization to use location.
+  requests and is granted authorization to use location.
 
 
 DEPRECATIONS
