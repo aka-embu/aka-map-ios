@@ -14,7 +14,7 @@ More information can be found at: http://developer.akamai.com/
 
 VERSION
 --------------------
-21.80
+21.90
 
 
 INSTALLATION
@@ -38,6 +38,17 @@ https://www.akamai.com/product/licenses.
 
 RELEASE NOTES
 --------------------
+
+21.90 - 2021-01-19
+
+- Fixes an issue where the SDK could malfunction due to insufficient file permissions.
+- Fixes an issue with cleaning old log files.
+- Fixes an issue that could create a name conflict when using the SDK alongside 
+  the CocoaLumberjack library.
+- Fixes for integration with Image & Video Manager.
+- Fixes an issue where some responses might be wrongfully stored in the cache.
+
+
 
 21.80 - 2020-12-09
 
